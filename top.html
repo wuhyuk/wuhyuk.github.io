@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>옷가게</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Brush+Script&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            width: 95%;
+            height: 140px;
+            margin-top: 10px;
+            margin-left: 10px;
+            border: 0px solid #333333;
+            list-style-type: none;
+        }
+        header div {
+            display: inline;
+            padding:10px 15px;
+            margin-right:20px;
+        }
+        header div a {
+            color:black;
+            text-decoration: none;
+        }
+        div a:hover {
+            background-color:rgb(196, 196, 196);
+        }
+        #logo{
+            float: left;
+            margin: 20px;
+        }
+        #top{
+            float: right;
+            margin: 20px 30px;
+        }
+        nav{
+            width: 95%;
+            height: 70px;
+            border: 0px solid #333333;
+            margin-top: 10px;
+            margin-left: 10px;
+            padding-top: 10px;
+        }
+        nav ul{
+            list-style-type: none;
+        }
+        nav ul li{
+            display: inline;
+            padding: 10px 15px;
+            margin: 50px 6%;
+            border-top:3px solid #222;
+        }
+        nav ul li a{
+            color: black;
+            text-decoration: none;
+        }
+        nav ul li:hover{
+            background-color:#ffffff55;
+        }
+        section{
+            float: left;
+            margin: 10px;
+            height: 1200px;
+        }
+        section a{
+            display: inline;
+            color: black;
+            text-decoration: none;
+        }
+        .clear{
+            clear: both;
+        }
+        aside{
+            position: fixed;
+            float: right;
+            border: 0px solid#333333;
+            margin-right: 5%;
+            margin-top: 10px;
+            margin-left: 58%;
+        }
+        aside li{
+            margin-bottom: 60px;
+            list-style-type: none;
+        }
+        footer{
+            width: 95%;
+            height: 70px;
+            border: 1px solid #333333;
+            margin-bottom: 0px;
+            margin-left: 10px;
+        }
+        #address{
+            float: left;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        #customer{
+            float: right;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        #page{
+            margin: auto;
+            width: 1010px;
+            border: 0px solid #333333;
+            background-image: url('/images/배경1.png');
+            font-family: 'Jua', sans-serif;
+            font-size: 120%;
+        }
+    </style>
+</head>
+<body id="page">
+    <header>
+        <div id="logo">
+            <a href="index.html"><h1>옷가게</h1></a>
+        </div>
+        <div id="top">
+            <a href="/login.html">로그인</a> |
+            <a href="/signup.html">회원가입</a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/top.html"><b>상의</b></a></li>
+            <li><a href="/pants.html"><b>하의</b></a></li>
+            <li><a href="/shoes.html"><b>신발</b></a></li>
+            <li><a href="/cap.html"><b>캡</b></a></li>
+            <li><a href="/accessory.html"><b>악세서리</b></a></li>
+        </ul>
+    </nav>
+    <section>
+        <img src="/images/top/1.png"><a href="https://www.coupang.com/vp/products/6106356857?itemId=11478721011&vendorItemId=78754068910&q=%EB%82%A8%EC%9E%90+%EC%98%A4%EB%B2%84%ED%95%8F+%EC%85%94%EC%B8%A0&itemsCount=36&searchId=5a8ac58fddfe46cc8cd37a6e2c77338b&rank=6&isAddedCart="> 디엘크리 남성용 오버핏 솔리드 오버포켓 셔츠</a><br>
+        <img src="/images/top/2.png"><a href="https://www.coupang.com/vp/products/1318395268?itemId=2338318395&vendorItemId=70334933018&q=%EB%A7%A8%ED%88%AC%EB%A7%A8&itemsCount=36&searchId=af691ea5373d4620b7c1e799c8c66483&rank=21&isAddedCart="> 블루빈 네오플랜 브이넥 맨투맨</a><br>
+        <img src="/images/top/3.png"><a href="https://www.coupang.com/vp/products/1271944151?itemId=2276779825&vendorItemId=70725081350&q=%EB%8B%88%ED%8A%B8&itemsCount=36&searchId=52ceddb381414b4c9205bd8b8a2f6d18&rank=21&isAddedCart="> 단군 남성용 컬러 배색 니트조끼</a><br>
+        <img src="/images/top/4.png"><a href="https://www.coupang.com/vp/products/6401514519?itemId=13688385889&vendorItemId=80939999717&q=%EC%98%A4%EB%B2%84%ED%95%8F+%EB%8B%88%ED%8A%B8&itemsCount=36&searchId=30fdabf10ac04656885c8b3b8c86eb42&rank=36&isAddedCart="> 남자 사계절 스프라이트니트 스트라이프 남자 오버핏 단가라니트 긴팔티셔츠 2color</a><br>
+    </section>
+    <aside>
+        <form>
+            <h4>브랜드</h4><br>
+            <a href="https://www.nike.com/" target="_blank"><img src="/images/brand/nike.png" width="80px"></a>
+            <a href="https://www.adidas.co.kr/" target="_blank"><img src="/images/brand/adidas.png" width="80px"></a><br>
+            <a href="https://shop.descentekorea.co.kr/" target="_blank"><img src="/images/brand/descente.png" width="80px"></a>
+            <a href="https://www.lecoqsportif.co.kr/" target="_blank"><img src="/images/brand/lecoqsportif.png" width="80px"></a><br>
+            <a href="https://www.nstationmall.com/" target="_blank"><img src="/images/brand/nature.png" width="80px"></a>
+            <a href="https://www.discovery-expedition.com/" target="_blank"><img src="/images/brand/discovery.png" width="80px"></a><br>
+            <a href="https://www.thombrowne.com/" target="_blank"><img src="/images/brand/thombrowne.png" width="80px"></a>
+            <a href="http://www.stoneisland.com/" target="_blank"><img src="/images/brand/stoneisland.png" width="80px"></a><br>
+            <a href="https://www.gucci.com/" target="_blank"><img src="/images/brand/gucci.png" width="80px"></a>
+            <a href="https://www.chanel.com/" target="_blank"><img src="/images/brand/chanel.png" width="80px"></a><br>
+        </form>
+    </aside>
+    <div class="clear">
+        <footer>
+            <div id="address">
+                대표| 전우혁 010-1111-2222
+            </div>
+            <div id="customer">
+                문의사항
+            </div>  
+        </footer>
+    </div>
+</body>
+</html>

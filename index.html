@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>옷가게</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Brush+Script&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            width: 95%;
+            height: 140px;
+            margin-top: 10px;
+            margin-left: 10px;
+            border: 0px solid #333333;
+            list-style-type: none;
+        }
+        header div {
+            display: inline;
+            padding:10px 15px;
+            margin-right:20px;
+        }
+        header div a {
+            color:black;
+            text-decoration: none;
+        }
+        div a:hover {
+            background-color:rgb(196, 196, 196);
+        }
+        #logo{
+            float: left;
+            margin: 20px;
+        }
+        #top{
+            float: right;
+            margin: 20px 30px;
+        }
+        nav{
+            width: 95%;
+            height: 70px;
+            border: 0px solid #333333;
+            margin-top: 10px;
+            margin-left: 10px;
+            padding-top: 10px;
+        }
+        nav ul{
+            list-style-type: none;
+        }
+        nav ul li{
+            display: inline;
+            padding: 10px 15px;
+            margin: 50px 6%;
+            border-top:3px solid #222;
+        }
+        nav ul li a{
+            color: black;
+            text-decoration: none;
+        }
+        nav ul li:hover{
+            background-color:#ffffff55;
+        }
+        section{
+            float: left;
+            margin: 10px;
+            margin-left: 15%;
+            height: 1200px;
+        }
+        #container{
+            position: relative;
+        }
+        .prod-list .caption{
+            position: absolute;
+            padding-top: 20px;
+            background: rgba(0,0,0,0.6);
+            width: 300px;
+            height: 200px;
+            top: 20px;
+            opacity: 0;
+            -moz-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+            z-index: 10;
+        }
+        .prod-list li:hover .caption{
+            opacity: 1;
+            -moz-transform: translateX(200px);
+            -ms-transform: translateX(200px);
+            -o-transform: translateX(200px);
+            -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+        }
+        .prod-list .caption h3, .prod-list .caption p{
+            color: #fff;
+            text-align: center;
+        }
+        .clear{
+            clear: both;
+        }
+        aside{
+            position: fixed;
+            float: right;
+            border: 0px solid#333333;
+            margin-right: 5%;
+            margin-top: 10px;
+            margin-left: 58%;
+        }
+        aside li{
+            margin-bottom: 60px;
+            list-style-type: none;
+        }
+        footer{
+            width: 95%;
+            height: 70px;
+            border: 1px solid #333333;
+            margin-bottom: 0px;
+            margin-left: 10px;
+        }
+        #address{
+            float: left;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        #customer{
+            float: right;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        #page{
+            margin: auto;
+            width: 1010px;
+            border: 0px solid #333333;
+            background-image: url('/images/배경1.png');
+            font-family: 'Jua', sans-serif;
+            font-size: 120%;
+        }
+    </style>
+</head>
+<body id="page">
+    <header>
+        <div id="logo">
+            <a href="index.html"><h1>옷가게</h1></a>
+        </div>
+        <div id="top">
+            <a href="/login.html">로그인</a> |
+            <a href="/signup.html">회원가입</a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/top.html"><b>상의</b></a></li>
+            <li><a href="/pants.html"><b>하의</b></a></li>
+            <li><a href="/shoes.html"><b>신발</b></a></li>
+            <li><a href="/cap.html"><b>캡</b></a></li>
+            <li><a href="/accessory.html"><b>악세서리</b></a></li>
+        </ul>
+    </nav>
+    <section>
+        <div id="container">
+            <ul class="prod-list">
+                <li>
+                    <img src="/images/set1.png">
+                    <div class="caption">
+                        <h3>세트상품 1</h3>
+                        <p>상의: 63,200</p>
+                        <p>하의: 38,000</p>
+                        <p>안경: 25,000</p>
+                        <p>시계: 24,000</p>
+                        <p>신발: 64,000</p>
+                        <p>총 가격: 214,200</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="container">
+            <ul class="prod-list">
+                <li>
+                    <img src="/images/set2.png">
+                    <div class="caption">
+                        <h3>세트상품 2</h3>
+                        <p>상의: 43,000</p>
+                        <p>하의: 50,000</p>
+                        <p>모자: 35,000</p>
+                        <p>가방: 37,000</p>
+                        <p>신발: 59,000</p>
+                        <p>총 가격: 224,000</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="container">
+            <ul class="prod-list">
+                <li>
+                    <img src="/images/set3.png">
+                    <div class="caption">
+                        <h3>세트상품 3</h3>
+                        <p>상의: 27,000</p>
+                        <p>하의: 32,000</p>
+                        <p>모자: 40,000</p>
+                        <p>반지: 24,000</p>
+                        <p>신발: 170,000</p>
+                        <p>총 가격: 283,000</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="container">
+            <ul class="prod-list">
+                <li>
+                    <img src="/images/set4.png">
+                    <div class="caption">
+                        <h3>세트상품 4</h3>
+                        <p>상의: 49,000</p>
+                        <p>하의: 70,000</p>
+                        <p>모자: 36,000</p>
+                        <p>가방: 140,000</p>
+                        <p>신발: 130,000</p>
+                        <p>총 가격: 425,000</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <aside>
+        <form>
+            <h4>브랜드</h4><br>
+            <a href="https://www.nike.com/" target="_blank"><img src="/images/brand/nike.png" width="80px"></a>
+            <a href="https://www.adidas.co.kr/" target="_blank"><img src="/images/brand/adidas.png" width="80px"></a><br>
+            <a href="https://shop.descentekorea.co.kr/" target="_blank"><img src="/images/brand/descente.png" width="80px"></a>
+            <a href="https://www.lecoqsportif.co.kr/" target="_blank"><img src="/images/brand/lecoqsportif.png" width="80px"></a><br>
+            <a href="https://www.nstationmall.com/" target="_blank"><img src="/images/brand/nature.png" width="80px"></a>
+            <a href="https://www.discovery-expedition.com/" target="_blank"><img src="/images/brand/discovery.png" width="80px"></a><br>
+            <a href="https://www.thombrowne.com/" target="_blank"><img src="/images/brand/thombrowne.png" width="80px"></a>
+            <a href="http://www.stoneisland.com/" target="_blank"><img src="/images/brand/stoneisland.png" width="80px"></a><br>
+            <a href="https://www.gucci.com/" target="_blank"><img src="/images/brand/gucci.png" width="80px"></a>
+            <a href="https://www.chanel.com/" target="_blank"><img src="/images/brand/chanel.png" width="80px"></a><br>
+        </form>
+    </aside>
+    <div class="clear">
+        <footer>
+            <div id="address">
+                대표| 전우혁 010-1111-2222
+            </div>
+            <div id="customer">
+                문의사항
+            </div>  
+        </footer>
+    </div>
+</body>
+</html>

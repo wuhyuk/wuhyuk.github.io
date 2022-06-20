@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>옷가게</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Brush+Script&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            width: 95%;
+            height: 140px;
+            margin-top: 10px;
+            margin-left: 10px;
+            border: 0px solid #333333;
+            list-style-type: none;
+        }
+        header div {
+            display: inline;
+            padding:10px 15px;
+            margin-right:20px;
+        }
+        header div a {
+            color:black;
+            text-decoration: none;
+        }
+        div a:hover {
+            background-color:rgb(196, 196, 196);
+        }
+        #logo{
+            float: left;
+            margin: 20px;
+        }
+        #top{
+            float: right;
+            margin: 20px 30px;
+        }
+        nav{
+            width: 95%;
+            height: 70px;
+            border: 0px solid #333333;
+            margin-top: 10px;
+            margin-left: 10px;
+            padding-top: 10px;
+        }
+        nav ul{
+            list-style-type: none;
+        }
+        nav ul li{
+            display: inline;
+            padding: 10px 15px;
+            margin: 50px 6%;
+            border-top:3px solid #222;
+        }
+        nav ul li a{
+            color: black;
+            text-decoration: none;
+        }
+        nav ul li:hover{
+            background-color:#ffffff55;
+        }
+        section{
+            float: left;
+            margin: 10px;
+            height: 1200px;
+        }
+        section a{
+            display: inline;
+            color: black;
+            text-decoration: none;
+        }
+        .clear{
+            clear: both;
+        }
+        aside{
+            position: fixed;
+            float: right;
+            border: 0px solid#333333;
+            margin-right: 5%;
+            margin-top: 10px;
+            margin-left: 58%;
+        }
+        aside li{
+            margin-bottom: 60px;
+            list-style-type: none;
+        }
+        footer{
+            width: 95%;
+            height: 70px;
+            border: 1px solid #333333;
+            margin-bottom: 0px;
+            margin-left: 10px;
+        }
+        #address{
+            float: left;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        #customer{
+            float: right;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        #page{
+            margin: auto;
+            width: 1010px;
+            border: 0px solid #333333;
+            background-image: url('/images/배경1.png');
+            font-family: 'Jua', sans-serif;
+            font-size: 120%;
+        }
+    </style>
+</head>
+<body id="page">
+    <header>
+        <div id="logo">
+            <a href="index.html"><h1>옷가게</h1></a>
+        </div>
+        <div id="top">
+            <a href="/login.html">로그인</a> |
+            <a href="/signup.html">회원가입</a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/top.html"><b>상의</b></a></li>
+            <li><a href="/pants.html"><b>하의</b></a></li>
+            <li><a href="/shoes.html"><b>신발</b></a></li>
+            <li><a href="/cap.html"><b>캡</b></a></li>
+            <li><a href="/accessory.html"><b>악세서리</b></a></li>
+        </ul>
+    </nav>
+    <section>
+        <img src="/images/shoes/1.png"><a href="https://www.coupang.com/vp/products/5227043033?itemId=7348187995&vendorItemId=81880443336&q=%EB%82%98%EC%9D%B4%ED%82%A4+%EC%97%90%EC%96%B4%ED%8F%AC%EC%8A%A4&itemsCount=36&searchId=62e8e06d472b4dc4baf04644b1d931a1&rank=1&isAddedCart="> 나이키 에어 포스 1 07 (화이트) CW2288-111</a><br>
+        <img src="/images/shoes/2.png"><a href="https://www.coupang.com/vp/products/5973016637?itemId=10733585996&vendorItemId=81929154153&q=%EB%B0%98%EC%8A%A4&itemsCount=36&searchId=d00797b5c41f42b990d8f743990c6d76&rank=3&isAddedCart="> 반스 올드스쿨 VN0D3HY28104</a><br>
+        <img src="/images/shoes/3.png"><a href="https://www.coupang.com/vp/products/104393628?itemId=316531598&vendorItemId=3777528082&sourceType=srp_product_ads&clickEventId=43e11199-3c79-4e65-a2a7-27cfcfebc308&korePlacement=15&koreSubPlacement=11&q=%EC%BB%A8%EB%B2%84%EC%8A%A4&itemsCount=36&searchId=7909b2cdbe244e32a23402e60b7994cc&rank=10&isAddedCart="> 에이스 남녀 지퍼하이탑 캔버스화 농구화</a><br>
+        <img src="/images/shoes/4.png"><a href="https://www.coupang.com/vp/products/5773925278?itemId=9818803237&vendorItemId=77102331085&sourceType=srp_product_ads&clickEventId=8ff6949e-c59a-4dfb-9866-87b4b11ff638&korePlacement=15&koreSubPlacement=5&q=%EA%B5%AC%EB%91%90&itemsCount=36&searchId=40bff792292a4db9a64004e9fb69ac05&rank=4&isAddedCart="> 나드리엔 남자 구두 키높이 페니 로퍼</a><br>
+    </section>
+    <aside>
+        <form>
+            <h4>브랜드</h4><br>
+            <a href="https://www.nike.com/" target="_blank"><img src="/images/brand/nike.png" width="80px"></a>
+            <a href="https://www.adidas.co.kr/" target="_blank"><img src="/images/brand/adidas.png" width="80px"></a><br>
+            <a href="https://shop.descentekorea.co.kr/" target="_blank"><img src="/images/brand/descente.png" width="80px"></a>
+            <a href="https://www.lecoqsportif.co.kr/" target="_blank"><img src="/images/brand/lecoqsportif.png" width="80px"></a><br>
+            <a href="https://www.nstationmall.com/" target="_blank"><img src="/images/brand/nature.png" width="80px"></a>
+            <a href="https://www.discovery-expedition.com/" target="_blank"><img src="/images/brand/discovery.png" width="80px"></a><br>
+            <a href="https://www.thombrowne.com/" target="_blank"><img src="/images/brand/thombrowne.png" width="80px"></a>
+            <a href="http://www.stoneisland.com/" target="_blank"><img src="/images/brand/stoneisland.png" width="80px"></a><br>
+            <a href="https://www.gucci.com/" target="_blank"><img src="/images/brand/gucci.png" width="80px"></a>
+            <a href="https://www.chanel.com/" target="_blank"><img src="/images/brand/chanel.png" width="80px"></a><br>
+        </form>
+    </aside>
+    <div class="clear">
+        <footer>
+            <div id="address">
+                대표| 전우혁 010-1111-2222
+            </div>
+            <div id="customer">
+                문의사항
+            </div>  
+        </footer>
+    </div>
+</body>
+</html>
